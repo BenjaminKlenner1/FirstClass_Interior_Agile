@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+
+<head>
+    <title>JavaScript stuff</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="style.css">
+    
+    <script src="https://kit.fontawesome.com/0772fc7655.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    
+
+</head>
+
+<body>
+
+
+    <div class="heading container-fluid">
+        <h1>First Class Interiors</h1>
+        <img src="content/logo.png">
+    </div>
+    <div class="navbar">
+        <ul>
+            <li><a class="active" href="Index.html">Home</a></li>
+            <li><a href="Shop.html">Shop</a></li>
+            <li><a href="About.html">About us</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+        </ul>
+    </div>
+    <div class="main">
+        <div class="category-navbar">
+            <ul>
+                <li><p onclick="restaurantButton()" type="button" id="restaurantButton">Restaurants</p></li>
+                <li><p onclick="hotelButton()" type="button" id="hotelButton">Hotels</p></li>
+                <li><p onclick="officeButton()" type="button" id="officeButton">Offices</p></li>
+                <li><p onclick="homeButton()" type="button" id="homeButton">Homes</p></li>
+            </ul>
+        </div>
+        <div class="category">
+            <div class="category-heading">
+                <h2 id="category-heading">Category Heading</h2>
+            </div>
+            <div class="category-images">
+                <img class="category-img category-img-small" id="category-img-left" onclick="smallLeft()">
+                <img class="category-img" id="category-img-main">
+                <img class="category-img category-img-small" id="category-img-right" onclick="smallRight()">
+            </div>
+            <div class="category-text">
+                <p class="category-project" id="category-project-1">Project 1</p>
+                <p id="category-text-1">Text1 placeholder</p>
+                <p class="category-project" id="category-project-2">Project 2</p>
+                <p id="category-text-2">Text2 placeholder</p>
+                <p class="category-project" id="category-project-3">Project 3</p>
+                <p id="category-text-3" style="padding-bottom: 15px;">Text3 placeholder</p>
+            </div>
+
+            <script>
+                restaurantButton()
+
+                function restaurantButton() {
+                    document.getElementById("category-heading").innerHTML = "Restaurants"
+                    document.getElementById("category-project-1").innerHTML = "Project 1"
+                    document.getElementById("category-project-2").innerHTML = "Project 2"
+                    document.getElementById("category-project-3").innerHTML = "Project 3"
+                    document.getElementById("category-text-1").innerHTML = "New York Style Pizzaria"
+                    document.getElementById("category-text-2").innerHTML = "Big City Cafe"
+                    document.getElementById("category-text-3").innerHTML = "Airport Membership Bar"
+                    document.getElementById("category-img-left").src = "content/restaurant1.png"
+                    document.getElementById("category-img-main").src = "content/restaurant2.png"
+                    document.getElementById("category-img-right").src = "content/restaurant3.png"
+                    activeCategory(1)
+                }
+                function hotelButton() {
+                    document.getElementById("category-heading").innerHTML = "Hotels"
+                    document.getElementById("category-project-1").innerHTML = "Project 1"
+                    document.getElementById("category-project-2").innerHTML = "Project 2"
+                    document.getElementById("category-project-3").innerHTML = "Project 3"
+                    document.getElementById("category-text-1").innerHTML = "Living room with central located fireplace"
+                    document.getElementById("category-text-2").innerHTML = "Shared stairwell, minibar, table area"
+                    document.getElementById("category-text-3").innerHTML = "Master bedroom"
+                    document.getElementById("category-img-left").src = "content/hotel1.png"
+                    document.getElementById("category-img-main").src = "content/hotel2.png"
+                    document.getElementById("category-img-right").src = "content/hotel3.png"
+                    activeCategory(2)
+                }
+                function officeButton() {
+                    document.getElementById("category-heading").innerHTML = "Offices"
+                    document.getElementById("category-project-1").innerHTML = "Project 1"
+                    document.getElementById("category-project-2").innerHTML = "Project 2"
+                    document.getElementById("category-project-3").innerHTML = "Project 3"
+                    document.getElementById("category-text-1").innerHTML = 'Open "hotdesk" office'
+                    document.getElementById("category-text-2").innerHTML = "Writers Room"
+                    document.getElementById("category-text-3").innerHTML = "Office Main Floor Including Meeting Rooms"
+                    document.getElementById("category-img-left").src = "content/office1.png"
+                    document.getElementById("category-img-main").src = "content/office2.png"
+                    document.getElementById("category-img-right").src = "content/office3.png"
+                    activeCategory(3)
+                }
+                function homeButton() {
+                    document.getElementById("category-heading").innerHTML = "Homes"
+                    document.getElementById("category-project-1").innerHTML = "Project 1"
+                    document.getElementById("category-project-2").innerHTML = "Project 2"
+                    document.getElementById("category-project-3").innerHTML = "Project 3"
+                    document.getElementById("category-text-1").innerHTML = "Functional Family Kitchen/Bar"
+                    document.getElementById("category-text-2").innerHTML = "Shared Living Room/Dining/Library"
+                    document.getElementById("category-text-3").innerHTML = "Open Plan Beach House"
+                    document.getElementById("category-img-left").src = "content/homes1.png"
+                    document.getElementById("category-img-main").src = "content/homes2.png"
+                    document.getElementById("category-img-right").src = "content/homes3.png"
+                    activeCategory(4)
+                }
+
+                function activeCategory(activated) {
+                    if (activated == 1) {
+                        document.getElementById("homeButton").classList.remove('active');
+                        document.getElementById("officeButton").classList.remove('active');
+                        document.getElementById("hotelButton").classList.remove('active');
+                        document.getElementById("restaurantButton").classList.add('active');
+                    } else if (activated == 2) {
+                        document.getElementById("homeButton").classList.remove('active');
+                        document.getElementById("officeButton").classList.remove('active');
+                        document.getElementById("hotelButton").classList.add('active');
+                        document.getElementById("restaurantButton").classList.remove('active');
+                    } else if (activated == 3) {
+                        document.getElementById("homeButton").classList.remove('active');
+                        document.getElementById("officeButton").classList.add('active');
+                        document.getElementById("hotelButton").classList.remove('active');
+                        document.getElementById("restaurantButton").classList.remove('active');
+                    } else if (activated == 4) {
+                        document.getElementById("homeButton").classList.add('active');
+                        document.getElementById("officeButton").classList.remove('active');
+                        document.getElementById("hotelButton").classList.remove('active');
+                        document.getElementById("restaurantButton").classList.remove('active');
+                    } else{
+                        document.getElementById("homeButton").classList.remove('active');
+                        document.getElementById("officeButton").classList.remove('active');
+                        document.getElementById("hotelButton").classList.remove('active');
+                        document.getElementById("restaurantButton").classList.remove('active');
+                    }
+                }
+
+                function smallLeft() {
+                    var newSource = document.getElementById("category-img-left").src;
+                    var currentSource = document.getElementById("category-img-main").src;
+                    document.getElementById("category-img-left").src = currentSource;
+                    document.getElementById("category-img-main").src = newSource;
+                }
+                function smallRight() {
+                    var newSource = document.getElementById("category-img-right").src;
+                    var currentSource = document.getElementById("category-img-main").src;
+                    document.getElementById("category-img-right").src = currentSource;
+                    document.getElementById("category-img-main").src = newSource;
+                }
+
+            </script>
+
+        </div>
+    </div>
+    <div class="footer row justify-content-center">
+        <div class="text-center">
+            <i class="fab fa-twitter socialsIcon col1"></i>
+            <i class="fab fa-facebook socialsIcon col1"></i>
+            <i class="fab fa-linkedin socialsIcon col1"></i>
+            <i class="fab fa-instagram socialsIcon col1"></i>
+        </div>
+    </div>
+</body>

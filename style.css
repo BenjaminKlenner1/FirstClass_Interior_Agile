@@ -1,0 +1,191 @@
+.heading {
+    height: 200px;
+    text-align: center;
+    background-color: #292929;
+}
+
+.heading h1 {
+    color: white;
+    padding-top: 50px;
+}
+
+.heading img {
+    width: 50px;
+}
+
+.navbar {
+    background-color: #292929;
+    font-size: 20px;
+    padding: 0px !important;
+}
+
+.category-navbar {
+    height: fit-content;
+    width: fit-content;
+    background-color: #292929;
+    font-size: 20px;
+}
+
+.navbar ul, .category-navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+} 
+
+.category-navbar ul {
+    margin-bottom: 50px;
+}
+  
+.navbar li{
+    float: left;
+    width: 150px;
+
+}
+
+.category-navbar li {
+    float: left;
+    width: 120px;
+}
+
+li a:hover,li p:hover {
+    background-color: #1b1b1b;
+    border-bottom-style: solid;
+    border-bottom-color: #1b1b1b;
+    border-bottom-width: 4px;
+}
+
+.navbar li a, .category-navbar li p {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    margin: 0px;
+}
+
+.category-navbar li p {
+    font-size: 16px;
+}
+
+.active {
+    border-bottom-style: solid;
+    border-bottom-color: #ffa31a;
+    border-bottom-width: 4px;
+    font-weight: bold;
+}
+
+.category {
+    width: 50%;
+    height: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.category-heading {
+    text-align: center;
+    padding-top: 0.1%;
+}
+
+.category-images {
+    padding-left: 8%;
+    
+}
+
+.category-img {
+    height: 90%;
+    width: 40%;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #1b1b1b;
+    border-radius: 6px;
+}
+
+.category-img-small {
+    height: 45%;
+    width: 25%;
+}
+
+.category-project {
+    font-size: 20px;
+    font-weight: 1000;
+    margin-top: 24px;
+    margin-bottom: 14px;
+
+}
+
+.category-text {
+    padding-left: 15%;
+    padding-right: 15%;
+    margin:0px;
+}
+
+.main {
+    display: inline-block;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.about-tile {
+    height: fit-content;
+    background-color: #8c8c8c;
+    margin: 0px 5px 20px 5px;
+    padding: 0px !important;
+}
+
+.about-img img {
+    width: 100%;
+}
+
+.about-name p {
+    font-size: 28px;
+    margin: 0px;
+}
+
+.about-title p {
+    margin-left: 10px;
+    margin-bottom: 0px;
+    display: block;
+}
+
+.about-desc p {
+    margin: 0px;
+    padding: 5px;
+}
+
+.shop-item {
+    background-color: #8c8c8c;
+    margin: 0px 5px 20px 5px;
+    padding: 0px !important;
+}
+
+.item-image img {
+    height: 1%;
+    width: 100%;
+    background-color: white;
+}
+
+.item-name {
+    font-size: 28px;
+    text-align: center;
+}
+
+.item-price {
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+.socialsIcon{
+    font-size: 75px;
+    top: 50%;
+    padding: 5px;
+    display: block;
+    float: left;
+    color: white;
+}
+
+.footer {
+    height: 150px;
+    width: 100%;
+    background-color: #292929;
+}
