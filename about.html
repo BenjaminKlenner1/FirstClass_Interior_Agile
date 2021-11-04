@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+
+<head>
+    <title>JavaScript stuff</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://kit.fontawesome.com/0772fc7655.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+
+
+    <div class="heading container-fluid">
+        <h1>First Class Interiors</h1>
+        <img src="content/logo.png">
+    </div>
+    <div class="navbar">
+        <ul>
+            <li><a href="Index.html">Home</a></li>
+            <li><a href="Shop.html">Shop</a></li>
+            <li><a class="active" href="About.html">About us</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+        </ul>
+    </div>
+    <div class="main">
+        <div class="about">
+            <div class="row justify-content-center">
+                <div class="about-tile col-2" id="p1">
+                    <div class="about-img">
+                        <img id="Image" src="content/ceo.png" onclick="Switch()">
+                    </div>
+                    <div class="about-name text-center">
+                        <p id="Name">Jeff Bezos</p>
+                    </div>
+                    <div class="about-title">
+                        <p id="Title">CEO</p>
+                    </div>
+                    <div class="about-desc">
+                        <p id="Desc">Jeff has been our CEO for over 20 years bringing invaluable knowledge, experience
+                            and money
+                            too our business.</p>
+                    </div>
+                    <div class="view-button">
+                        <button onclick='ButtonClick("Main")' id="b1">View</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="about-tile col-2" id="p2">
+                    <div class="about-img">
+                        <img src="content/who1.png">
+                    </div>
+                    <div class="about-name text-center">
+                        <p>Elon Musk</p>
+                    </div>
+                    <div class="about-title">
+                        <p>CMO</p>
+                    </div>
+                    <div class="about-desc">
+                        <p>Elon Musk was brought on early as Cheif Marketing Officer. He has extensive experience on
+                            twitter</p>
+                    </div>
+                    <div class="view-button">
+                        <button onclick='ButtonClick("CMO")' id="b2">View</button>
+                    </div>
+                </div>
+                <div class="about-tile col-2" id="p3">
+                    <div class="about-img">
+                        <img src="content/who2.png">
+                    </div>
+                    <div class="about-name text-center">
+                        <p>Larry Page</p>
+                    </div>
+                    <div class="about-title">
+                        <p>CPO</p>
+                    </div>
+                    <div class="about-desc">
+                        <p>Larry Page is our Cheif Production Officer and oversees the production of our furniture,
+                            decorations and other products.</p>
+                    </div>
+                    <div class="view-button">
+                        <button onclick='ButtonClick("CPO")' id="b3">View</button>
+                    </div>
+                </div>
+                <div class="about-tile col-2" id="p4">
+                    <div class="about-img">
+                        <img src="content/who3.png">
+                    </div>
+                    <div class="about-name text-center">
+                        <p>Bill Gates</p>
+                    </div>
+                    <div class="about-title">
+                        <p>CCO</p>
+                    </div>
+                    <div class="about-desc">
+                        <p>Cheif Communications Officer, Bill Gates, communicates with our competitors and partners.</p>
+                    </div>
+                    <div class="view-button">
+                        <button onclick='ButtonClick("CCO")' id="b4">View</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="about-tile col-2" id="p5">
+                    <div class="about-img">
+                        <img src="content/who4.png">
+                    </div>
+                    <div class="about-name text-center">
+                        <p>Mark Zuckerburg</p>
+                    </div>
+                    <div class="about-title">
+                        <p>HR</p>
+                    </div>
+                    <div class="about-desc">
+                        <p>Mark Zuckerburg is our Human Resources because he is a real human and not a lizard, trust
+                            Mark (human) Zuckerburg with your human problems so he can study them and help you.</p>
+                    </div>
+                    <div class="view-button">
+                        <button onclick='ButtonClick("HR")' id="b5">View</button>
+                    </div>
+                </div>
+                <div class="about-tile col-2" id="p6">
+                    <div class="about-img">
+                        <img src="content/who5.png">
+                    </div>
+                    <div class="about-name text-center">
+                        <p>Warren Buffet</p>
+                    </div>
+                    <div class="about-title">
+                        <p>CFO</p>
+                    </div>
+                    <div class="about-desc">
+                        <p>No one really knows what Warren Buffet does but his title is Cheif Financial Officer and the
+                            business always seems to have enough money to opperate so I guess he is doing a good job.
+                        </p>
+                    </div>
+                    <div class="view-button">
+                        <button onclick='ButtonClick("CFO")' id="b6">View</button>
+                    </div>
+                </div>
+            </div>
+
+            <script>
+
+
+                function ButtonClick(Title) {
+
+                    if (Title == "Main") {
+                        document.getElementById("p2").style.display = "none";
+                        document.getElementById("p3").style.display = "none";
+                        document.getElementById("p4").style.display = "none";
+                        document.getElementById("p5").style.display = "none";
+                        document.getElementById("p6").style.display = "none";
+                        document.getElementById("b1").style.display = "none";
+                    } else if (Title == "CMO") {
+                        document.getElementById("p1").style.display = "none";
+                        document.getElementById("p3").style.display = "none";
+                        document.getElementById("p4").style.display = "none";
+                        document.getElementById("p5").style.display = "none";
+                        document.getElementById("p6").style.display = "none";
+                        document.getElementById("b2").style.display = "none";
+                    } else if (Title == "CPO") {
+                        document.getElementById("p1").style.display = "none";
+                        document.getElementById("p2").style.display = "none";
+                        document.getElementById("p4").style.display = "none";
+                        document.getElementById("p5").style.display = "none";
+                        document.getElementById("p6").style.display = "none";
+                        document.getElementById("b3").style.display = "none";
+                    } else if (Title == "CCO") {
+                        document.getElementById("p1").style.display = "none";
+                        document.getElementById("p2").style.display = "none";
+                        document.getElementById("p3").style.display = "none";
+                        document.getElementById("p5").style.display = "none";
+                        document.getElementById("p6").style.display = "none";
+                        document.getElementById("b4").style.display = "none";
+                    } else if (Title == "HR") {
+                        document.getElementById("p1").style.display = "none";
+                        document.getElementById("p2").style.display = "none";
+                        document.getElementById("p3").style.display = "none";
+                        document.getElementById("p4").style.display = "none";
+                        document.getElementById("p6").style.display = "none";
+                        document.getElementById("b5").style.display = "none";
+                    } else if (Title == "CFO") {
+                        document.getElementById("p1").style.display = "none";
+                        document.getElementById("p2").style.display = "none";
+                        document.getElementById("p3").style.display = "none";
+                        document.getElementById("p4").style.display = "none";
+                        document.getElementById("p5").style.display = "none";
+                        document.getElementById("b6").style.display = "none";
+                    }
+
+                }
+
+                function Switch() {
+
+                    if (document.getElementById("Title").innerHTML == "CEO") {
+                        document.getElementById("Image").src = "content/md.png";
+                        document.getElementById("Name").innerHTML = "Bernard Arnault";
+                        document.getElementById("Title").innerHTML = "MD";
+                        document.getElementById("Desc").innerHTML = "Bernard Arnault is the Managing Director of Captivate Interiors and makes some damn good biscuits";
+                    } else {
+                        document.getElementById("Image").src = "content/ceo.png";
+                        document.getElementById("Name").innerHTML = "Jeff Bezos";
+                        document.getElementById("Title").innerHTML = "CEO";
+                        document.getElementById("Desc").innerHTML = "Jeff has been our CEO for over 20 years bringing invaluable knowledge, experience and money too our business.";
+                    }
+                }
+
+            </script>
+
+        </div>
+    </div>
+    <div class="footer row justify-content-center">
+        <div class="text-center">
+            <i class="fab fa-twitter socialsIcon col1"></i>
+            <i class="fab fa-facebook socialsIcon col1"></i>
+            <i class="fab fa-linkedin socialsIcon col1"></i>
+            <i class="fab fa-instagram socialsIcon col1"></i>
+        </div>
+    </div>
+</body>
